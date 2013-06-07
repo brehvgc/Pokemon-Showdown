@@ -10389,7 +10389,7 @@ exports.BattleMovedex = {
 				source.ability = sourceAbility;
 				return false;
 			}
-			this.add('-activate', source, 'move: Skill Swap');
+			this.add('-activate', source, 'move: Skill Swap', source.ability, target.ability, target.side === source.side);
 		},
 		secondary: false,
 		target: "normal",
